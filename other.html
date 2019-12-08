@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Miscellaneous</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class=nav>
+        <a href="index.html">Porftolio Home</a>
+        <a href="academicportfolio.html">Academics</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="profilelinks.html">Profile Links</a>
+        <a href="other.html">Miscellaneous</a>
+    </div>
+
+    <h1>Miscellaneous</h1>
+
+
+    <h2>An SVG graphic displaying my initials!</h2>
+    <svg height="200" width="550">
+        <defs>
+            <linearGradient id="graphic1" x1="20%" y1="50%" x2="90%" y2="0%">
+                <stop offset="10%" style="stop-color:rgb(220,75,255);stop-opacity:1" />
+                <stop offset="90%" style="stop-color:rgb(142,85,156);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="120" cy="75" rx="90" ry="60" fill="url(#graphic1)" />
+        <text fill="#00ffff" font-size="35" font-family="Open Sans" x="90" y="80">
+            JCS
+        </text>
+        Your browser does not support SVG.
+    </svg>
+
+    <h2>A video of me waving!</h2>
+    <video width="768" height="432" controls>
+        <source src="websitevideo.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <h2>Audio of me talking! Do you like my voice?</h2>
+    <audio controls>
+        <source src="sound.ogg" type="audio/ogg">
+        Your browser does not support audio.
+    </audio>
+
+    <div class=other>
+        <canvas id="canvas" width="770" height="80" style="border:4px solid #800080;">
+            Your browser does not support HTML5 canvas.</canvas>
+
+        <script>
+            var c = document.getElementById("canvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "50px Helvetica";
+            ctx.textalign = "center";
+            ctx.fillText("Thank you for visiting my website!", 10, 50);
+        </script>
+    </div>
+
+</body>
+
+</html>
